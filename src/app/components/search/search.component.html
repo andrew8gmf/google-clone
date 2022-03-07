@@ -1,1 +1,12 @@
-<p>search works!</p>
+<div class="container">
+    <input  class="container__input"
+            maxlength="2048"
+            type="text"
+            autocomplete="off"
+            autofocus
+            [(ngModel)]="currentTermValue"
+            value="{{currentTermValue}}"
+    >
+    <mat-icon class="container__icon">search_outline</mat-icon>
+    <button class="container__button" type="submit" style="display: none;"></button>
+</div>
